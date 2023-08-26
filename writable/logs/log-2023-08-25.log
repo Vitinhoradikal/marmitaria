@@ -1,0 +1,321 @@
+CRITICAL - 2023-08-25 01:59:44 --> The route for "http://10.0.0.12/marmitas/public/Produtos/todososprodutos" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://10.0.0.12/marmitas/public/Produtos/todososprodutos')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Produtos.php(44): redirect('http://10.0.0.12/marmitas/public/Produtos/todososprodutos')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 02:17:25 --> syntax error, unexpected token "<"
+in APPPATH\Controllers\Produtos.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('Produtos/cadastrar', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Produtos/cadastrar')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('Produtos/cadastrar')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 02:17:42 --> syntax error, unexpected token "<"
+in APPPATH\Controllers\Produtos.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('Produtos/cadastrar', 'post')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Produtos/cadastrar')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('Produtos/cadastrar')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 03:29:41 --> Too few arguments to function App\Controllers\Produtos::excluirproduto(), 0 passed in C:\xampp2\htdocs\marmitas\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Produtos.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->excluirproduto()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 03:33:05 --> Array to string conversion
+in APPPATH\Controllers\Produtos.php on line 68.
+ 1 APPPATH\Controllers\Produtos.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp2\\htdocs\\marmitas\\app\\Controllers\\Produtos.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->excluirproduto('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 03:36:38 --> Array to string conversion
+in APPPATH\Controllers\Produtos.php on line 68.
+ 1 APPPATH\Controllers\Produtos.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp2\\htdocs\\marmitas\\app\\Controllers\\Produtos.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->excluirproduto('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 03:38:38 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\Produtos.php on line 73.
+ 1 SYSTEMPATH\Router\Router.php(510): CodeIgniter\Router\AutoRouter->getRoute('Produtos/excluirproduto/10', 'get')
+ 2 SYSTEMPATH\Router\Router.php(208): CodeIgniter\Router\Router->autoRoute('Produtos/excluirproduto/10')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('Produtos/excluirproduto/10')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 13:55:56 --> Undefined variable $data
+in APPPATH\Views\editarproduto.php on line 17.
+ 1 APPPATH\Views\editarproduto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\editarproduto.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\editarproduto.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('editarproduto', [], true)
+ 5 APPPATH\Controllers\Produtos.php(91): view('editarproduto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->editarproduto('25')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-25 14:21:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(
+        nome = 'Escondidinho',
+        descricao = 'escondido',
+        ...' at line 2 in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        UPDAT...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        UPDAT...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        UPDAT...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Produtos.php(112): CodeIgniter\Database\BaseConnection->query('\r\n        UPDAT...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Produtos->editarprodutossubmit()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-25 14:21:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(
+        nome = 'Escondidinho',
+        descricao = 'escondido',
+        ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ')
+ 4 APPPATH\Controllers\Produtos.php(112): CodeIgniter\Database\BaseConnection->query('
+        UPDATE produtos
+        SET (
+        nome = :nome:,
+        descricao = :descricao:,
+        precovenda = :preco:,
+        status = :status:  
+        WHERE idproduto = :idproduto:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->editarprodutossubmit()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-25 14:22:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(
+        nome = 'Escondidinho',
+        descricao = 'escondido',
+        ...' at line 2 in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        UPDAT...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        UPDAT...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        UPDAT...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Produtos.php(112): CodeIgniter\Database\BaseConnection->query('\r\n        UPDAT...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Produtos->editarprodutossubmit()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-25 14:22:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(
+        nome = 'Escondidinho',
+        descricao = 'escondido',
+        ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ')
+ 4 APPPATH\Controllers\Produtos.php(112): CodeIgniter\Database\BaseConnection->query('
+        UPDATE produtos
+        SET (
+        nome = :nome:,
+        descricao = :descricao:,
+        precovenda = :preco:,
+        status = :status:  
+        WHERE idproduto = :idproduto:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->editarprodutossubmit()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-25 14:28:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(
+        nome = 'Escondidinho',
+        descricao = 'escondido',
+        ...' at line 2 in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n        UPDAT...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        UPDAT...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        UPDAT...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Produtos.php(112): CodeIgniter\Database\BaseConnection->query('\r\n        UPDAT...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Produtos->editarprodutossubmit()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-25 14:28:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(
+        nome = 'Escondidinho',
+        descricao = 'escondido',
+        ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+        UPDATE produtos
+        SET (
+        nome = \'Escondidinho\',
+        descricao = \'escondido\',
+        precovenda = \'50\',
+        status = \'1\'  
+        WHERE idproduto = \'26\'
+        ')
+ 4 APPPATH\Controllers\Produtos.php(112): CodeIgniter\Database\BaseConnection->query('
+        UPDATE produtos
+        SET (
+        nome = :nome:,
+        descricao = :descricao:,
+        precovenda = :preco:,
+        status = :status:  
+        WHERE idproduto = :idproduto:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->editarprodutossubmit()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:30:17 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp2\htdocs\marmitas\app\Controllers\Produtos.php on line 69
+in SYSTEMPATH\Common.php on line 1164.
+ 1 APPPATH\Controllers\Produtos.php(69): view('excluirprodutosconfirm', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:32:51 --> Attempt to read property "nome" on string
+in APPPATH\Views\excluirprodutosconfirm.php on line 7.
+ 1 APPPATH\Views\excluirprodutosconfirm.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nome" on string', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('excluirprodutosconfirm', [], true)
+ 5 APPPATH\Controllers\Produtos.php(72): view('excluirprodutosconfirm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:33:50 --> Attempt to read property "nome" on string
+in APPPATH\Views\excluirprodutosconfirm.php on line 7.
+ 1 APPPATH\Views\excluirprodutosconfirm.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nome" on string', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('excluirprodutosconfirm', [], true)
+ 5 APPPATH\Controllers\Produtos.php(72): view('excluirprodutosconfirm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:34:03 --> Undefined variable $params
+in APPPATH\Views\excluirprodutosconfirm.php on line 7.
+ 1 APPPATH\Views\excluirprodutosconfirm.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $params', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('excluirprodutosconfirm', [], true)
+ 5 APPPATH\Controllers\Produtos.php(72): view('excluirprodutosconfirm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:35:30 --> Undefined variable $params
+in APPPATH\Views\excluirprodutosconfirm.php on line 7.
+ 1 APPPATH\Views\excluirprodutosconfirm.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $params', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('excluirprodutosconfirm', [], true)
+ 5 APPPATH\Controllers\Produtos.php(72): view('excluirprodutosconfirm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('27')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:35:48 --> Attempt to read property "nome" on string
+in APPPATH\Views\excluirprodutosconfirm.php on line 7.
+ 1 APPPATH\Views\excluirprodutosconfirm.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nome" on string', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('excluirprodutosconfirm', [], true)
+ 5 APPPATH\Controllers\Produtos.php(72): view('excluirprodutosconfirm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('27')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:36:41 --> Attempt to read property "idproduto" on string
+in APPPATH\Views\excluirprodutosconfirm.php on line 7.
+ 1 APPPATH\Views\excluirprodutosconfirm.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idproduto" on string', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\excluirprodutosconfirm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('excluirprodutosconfirm', [], true)
+ 5 APPPATH\Controllers\Produtos.php(72): view('excluirprodutosconfirm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('27')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-25 15:48:46 --> Undefined array key 0
+in APPPATH\Controllers\Produtos.php on line 79.
+ 1 APPPATH\Controllers\Produtos.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp2\\htdocs\\marmitas\\app\\Controllers\\Produtos.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->confirm('Produtos', 'excluirproduto')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

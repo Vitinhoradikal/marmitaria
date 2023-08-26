@@ -1,0 +1,409 @@
+ERROR - 2023-08-24 02:37:33 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cli...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cli...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cli...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Clientes.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO cli...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Clientes->cadastrar()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-24 02:37:33 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    \'Isabel Aparecida de Paula Francisco\',
+                    \'Chico Reis\',
+                    \'190\',
+                    \'são domingos\',
+                    \'casa\',
+                    \'35999490983\'
+                    )
+                    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    \'Isabel Aparecida de Paula Francisco\',
+                    \'Chico Reis\',
+                    \'190\',
+                    \'são domingos\',
+                    \'casa\',
+                    \'35999490983\'
+                    )
+                    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    \'Isabel Aparecida de Paula Francisco\',
+                    \'Chico Reis\',
+                    \'190\',
+                    \'são domingos\',
+                    \'casa\',
+                    \'35999490983\'
+                    )
+                    ')
+ 4 APPPATH\Controllers\Clientes.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    :nome:,
+                    :rua:,
+                    :numero:,
+                    :bairro:,
+                    :referencia:,
+                    :telefone:
+                    )
+                    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Clientes->cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-24 02:39:11 --> mysqli_sql_exception: Column 'idcliente' cannot be null in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cli...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cli...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cli...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Clientes.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO cli...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Clientes->cadastrar()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-24 02:39:11 --> Column 'idcliente' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO clientes
+                    VALUES(
+                    null,
+                    \'Isabel Aparecida de Paula Francisco\',
+                    \'Chico Reis\',
+                    \'190\',
+                    \'são domingos\',
+                    \'casa\',
+                    \'35999490983\'
+                    )
+                    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO clientes
+                    VALUES(
+                    null,
+                    \'Isabel Aparecida de Paula Francisco\',
+                    \'Chico Reis\',
+                    \'190\',
+                    \'são domingos\',
+                    \'casa\',
+                    \'35999490983\'
+                    )
+                    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO clientes
+                    VALUES(
+                    null,
+                    \'Isabel Aparecida de Paula Francisco\',
+                    \'Chico Reis\',
+                    \'190\',
+                    \'são domingos\',
+                    \'casa\',
+                    \'35999490983\'
+                    )
+                    ')
+ 4 APPPATH\Controllers\Clientes.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO clientes
+                    VALUES(
+                    null,
+                    :nome:,
+                    :rua:,
+                    :numero:,
+                    :bairro:,
+                    :referencia:,
+                    :telefone:
+                    )
+                    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Clientes->cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-24 03:04:42 --> mysqli_sql_exception: Column 'nome' cannot be null in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cli...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cli...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cli...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Clientes.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO cli...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Clientes->cadastrar()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-24 03:04:42 --> Column 'nome' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL
+                    )
+                    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL
+                    )
+                    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL
+                    )
+                    ')
+ 4 APPPATH\Controllers\Clientes.php(33): CodeIgniter\Database\BaseConnection->query('INSERT INTO clientes
+                    VALUES(
+                    0,
+                    :nome:,
+                    :rua:,
+                    :numero:,
+                    :bairro:,
+                    :referencia:,
+                    :telefone:
+                    )
+                    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Clientes->cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-24 13:52:16 --> mysqli_sql_exception: Column 'precovenda' cannot be null in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO pro...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Produtos.php(29): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Produtos->cadastrar()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-24 13:52:16 --> Column 'precovenda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    \'Escondidinho\',
+                    \'de carne moída\',
+                    NULL,
+                    NULL                    
+                    )
+                    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    \'Escondidinho\',
+                    \'de carne moída\',
+                    NULL,
+                    NULL                    
+                    )
+                    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    \'Escondidinho\',
+                    \'de carne moída\',
+                    NULL,
+                    NULL                    
+                    )
+                    ')
+ 4 APPPATH\Controllers\Produtos.php(29): CodeIgniter\Database\BaseConnection->query('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    :nome:,
+                    :descricao:,
+                    :precovenda:,
+                    :status:                    
+                    )
+                    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-24 13:53:10 --> mysqli_sql_exception: Column 'status' cannot be null in C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\marmitas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO pro...', 0)
+#1 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 C:\xampp2\htdocs\marmitas\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 C:\xampp2\htdocs\marmitas\app\Controllers\Produtos.php(29): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...', Array)
+#4 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(932): App\Controllers\Produtos->cadastrar()
+#5 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#6 C:\xampp2\htdocs\marmitas\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp2\htdocs\marmitas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-24 13:53:10 --> Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    \'Escondidinho\',
+                    \'de carne moída\',
+                    \'10\',
+                    NULL                    
+                    )
+                    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    \'Escondidinho\',
+                    \'de carne moída\',
+                    \'10\',
+                    NULL                    
+                    )
+                    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    \'Escondidinho\',
+                    \'de carne moída\',
+                    \'10\',
+                    NULL                    
+                    )
+                    ')
+ 4 APPPATH\Controllers\Produtos.php(29): CodeIgniter\Database\BaseConnection->query('INSERT INTO produtos
+                    VALUES(
+                    0,
+                    :nome:,
+                    :descricao:,
+                    :preco:,
+                    :status:                    
+                    )
+                    ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 14:27:55 --> Undefined variable $produtos
+in APPPATH\Views\listadeprodutos.php on line 1.
+ 1 APPPATH\Views\listadeprodutos.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produtos', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\listadeprodutos.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\listadeprodutos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 5 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:00:33 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:02:12 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:02:17 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:03:08 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:03:14 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:05:29 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 15:05:36 --> Call to undefined method CodeIgniter\View\View::seccion()
+in APPPATH\Views\listadeprodutos.php on line 3.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 19:59:05 --> Invalid file: "listadeprodutos.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listadeprodutos.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('listadeprodutos', [], true)
+ 3 APPPATH\Controllers\Produtos.php(57): view('listadeprodutos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 19:59:27 --> Invalid file: "layouts/cardapio.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/cardapio.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/cardapio', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('layouts/listadeprodutos', [], true)
+ 4 APPPATH\Controllers\Produtos.php(57): view('layouts/listadeprodutos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 20:41:59 --> syntax error, unexpected end of file
+in APPPATH\Views\layouts\listadeprodutos.php on line 38.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('layouts/listadeprodutos', [], true)
+ 3 APPPATH\Controllers\Produtos.php(57): view('layouts/listadeprodutos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-24 20:48:21 --> Undefined property: stdClass::$preco
+in APPPATH\Views\layouts\listadeprodutos.php on line 29.
+ 1 APPPATH\Views\layouts\listadeprodutos.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$preco', 'C:\\xampp2\\htdocs\\marmitas\\app\\Views\\layouts\\listadeprodutos.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp2\\htdocs\\marmitas\\app\\Views\\layouts\\listadeprodutos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('layouts/listadeprodutos', [], true)
+ 5 APPPATH\Controllers\Produtos.php(57): view('layouts/listadeprodutos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Produtos->todososprodutos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
