@@ -126,7 +126,7 @@ public function confirm($idproduto)
         $params = [
             'idproduto' => $idproduto,
             'nome' => $nome,
-            'descricao' => $descricao,
+            'descricao' => $descricao,  
             'preco' => $precodevenda,
             'status' => $status
         ];

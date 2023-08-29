@@ -62,9 +62,59 @@ class Clientes extends BaseController
 
     }
 
-    public function editarcliente()
+    public function editarcliente($idcliente)
     {
-        echo'editar';
+        $params = [
+            'idcliente' => $idcliente
+        ];
+
+        $db=db_connect();
+        $dados = $db->query(
+            "SELECT * FROM clientes WHERE idcliente = :idcliente:"
+            ,$params)->getResultObject();
+        $db->close();
+
+            $data['cliente'] = $dados[0];
+            
+        echo view('templates/top');
+        echo view('editarcliente',$data);
+    }
+
+    public function editarclientesubmit()
+    {
+        $idcliente = $this->request->getPost('idcliente');
+        $nome = $this->request->getPost('nome');
+        $rua = $this->request->getPost('rua');
+        $numero = $this->request->getPost('numero');
+        $bairro = $this->request->getPost('bairro');
+        $referencia = $this->request->getPost('referencia');
+        $telefone = $this->request->getPost('telefone');
+
+        $params = [
+            'idcliente' => $idcliente,
+            'nome' => $nome,
+            'rua' => $rua,
+            'numero' => $numero,
+            'bairro' => $bairro,
+            'referencia' => $referencia,
+            'telefone' => $telefone
+        ];
+
+        $db = db_connect();
+        $db->query("
+        UPDATE clientes
+        SET 
+        nome = :nome:,
+        rua = :rua:,
+        numero = :numero:,
+        bairro = :bairro:,
+        referencia = :referencia:,   
+        telefone = :telefone:
+        WHERE idcliente = :idcliente:
+        ", $params);
+        $db->close();
+
+        return redirect()->to(site_url('Clientes/todososclientes'));
     }
 
     public function confirm()

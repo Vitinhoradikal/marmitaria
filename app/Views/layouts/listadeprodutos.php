@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-10"></div>
         <div class="col-2">
-            <a class="btn btn-primary" href=<?=site_url("Clientes/formcadastro"); ?> >Novo Produto</a>
+            <a class="btn btn-primary" href=<?=site_url("Produtos/formcadastro"); ?> >Novo Produto</a>
         </div>
     </div>
     <div class="row">
@@ -21,9 +21,18 @@
                         <th class="text-center">Botões</th>
                     </tr>
                 </thead>
+                <!-- Essa mensagem é exibida caso não existam produtos cadastrados no banco de dados-->
                 <?php if(count($produtos) == 0):?>
-                    <p class="text-center primary"> "Nenhum produto cadastrado.</p>
+                    <div class="row">
+                        <div class="col-5"></div>
+                            <div class="col-2">
+                            <p class="text-center primary"> "Nenhum produto cadastrado.</p>
                 <?php else: ?>
+                        <div class="col-5"></div>
+                            </div>
+                        </div>
+                    
+                   
                 <tbody>
                     <?php foreach ($produtos as $produto): ?>
                     <tr>
