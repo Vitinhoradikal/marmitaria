@@ -43,6 +43,7 @@
                     <label for="exampleFormControlInput1" class="form-label">Telefone</label>
                     <input name="telefone" type="preco" class="form-control" id="exampleFormControlInput1" value="<?= $cliente->telefone ?>">
                 </div>
+                    <a href=<?=site_url("Clientes/todososclientes")?> type="voltar" class="btn btn-secondary">Voltar</a>
                     <button type="submit" class="btn btn-primary">Atualizar</button>
                     <button type="reset" class="btn btn-primary">Limpar</button>
                 </body>

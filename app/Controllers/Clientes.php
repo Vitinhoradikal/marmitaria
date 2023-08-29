@@ -117,8 +117,36 @@ class Clientes extends BaseController
         return redirect()->to(site_url('Clientes/todososclientes'));
     }
 
-    public function confirm()
+    public function confirm($idcliente)
      {
-        echo'confirm';
+        $params=[
+            'idcliente' => $idcliente
+        ];
+    
+        $db = db_connect();
+        $dados = $db->query("
+            SELECT * FROM clientes 
+            WHERE idcliente = :idcliente:
+        ",$params)->getResultObject();
+        $db->close();
+    
+        $data['cliente'] = $dados[0];
+    
+        echo view('templates/top');
+        echo view('excluirclientesconfirm',$data);
+        echo view('templates/foot');
+    
+    }
+
+    public function excluircliente($idcliente)
+    {
+        $params =[
+            'idcliente' => $idcliente
+        ];
+        $db = db_connect();
+        $db->query("DELETE FROM clientes WHERE idcliente = :idcliente:", $params);
+        $db->close();
+
+        return redirect()->to(site_url('Clientes/todososclientes'));
     }
 }
