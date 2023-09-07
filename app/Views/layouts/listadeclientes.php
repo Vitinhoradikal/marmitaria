@@ -28,7 +28,7 @@
                     <?php foreach ($clientes as $cliente): ?>
                     <tr>
                         <td><?= $cliente->nome ?></td>
-                        <td><?= 'Rua: '.$cliente->rua .' nº: '. $cliente->numero.' Bairro: '. $cliente->bairro.' Referência: ' ?></td>
+                        <td><?= 'Rua: '.$cliente->rua .' nº: '. $cliente->numero.' Bairro: '. $cliente->bairro.' Referência: '.$cliente->referencia ?></td>
                         <td><?= $cliente->telefone ?></td>
                         <td class="text-center">
                             <a href="<?= site_url('Clientes/editarcliente/'.$cliente->idcliente)?>" class="btn btn-primary btn-sm mx-2" >&#9998;</a> 
