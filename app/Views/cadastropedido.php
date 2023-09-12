@@ -8,8 +8,12 @@
                     echo form_open("Pedidos/cadastrar");
                 ?>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                    <input name="nome" type="nome" class="form-control" id="exampleFormControlInput1" placeholder="José">
+                    <label for="exampleFormControlInput1" class="form-label">Cliente</label>
+                    <select name="nome" type="nome" class="form-select" id="exampleFormControlInput1" placeholder="José">
+                    <?php foreach($clientes as $cliente): ?>
+                    <option><?= $cliente->nome ?> </option>
+                    <?php endforeach?>    
+                </select>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Rua</label>
