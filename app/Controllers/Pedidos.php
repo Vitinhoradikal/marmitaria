@@ -63,7 +63,23 @@ class Pedidos extends BaseController
         $_SESSION['marmita'] = $this->request->getPost('marmita');;
         
         echo view('templates/top');
-        echo("Marmita-> ".$_SESSION['marmita']);
+        //echo("Marmita-> ".$_SESSION['marmita']);
         echo view ('formingredientes',$ingredientes);
+    }
+
+    public function inseremarmita()
+    {
+        session_start();
+
+        $cliente = $_SESSION['cliente'];
+        $marmita = $_SESSION['marmita'];
+        echo view('templates/top');
+
+        echo("Cliente=$cliente || Marmita=$marmita <hr>");
+        $pedido = $this->request->getPost('itens_selecionados');
+        $count = count($pedido);
+        echo("Tamanho array:     $count <hr>");
+
+        print_r ($pedido);
     }
 }
