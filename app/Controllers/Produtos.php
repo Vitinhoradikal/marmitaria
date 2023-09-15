@@ -20,12 +20,15 @@ class Produtos extends BaseController
         $descricao = $this->request->getPost('descricao');
         $precodevenda = $this->request->getPost('preco');
         $status = $this->request->getPost('status');
+        $categoria = $this->request->getPost('categoria');
 
         $params = [
             'nome' => $nome,
             'descricao' => $descricao,
-            'preco' => $precodevenda,
-            'status' => $status
+            'precovenda' => $precodevenda,
+            'status' => $status,
+            'alteracao' => date("Y-m-d H:i:s.u"),
+            'categoria' => $categoria
         ];
 
         $db = db_connect();
@@ -34,8 +37,10 @@ class Produtos extends BaseController
                     0,
                     :nome:,
                     :descricao:,
-                    :preco:,
-                    :status:                    
+                    :precovenda:,
+                    :status:, 
+                    :alteracao:,
+                    :categoria:                   
                     )
                     ", $params);
         $db->close();

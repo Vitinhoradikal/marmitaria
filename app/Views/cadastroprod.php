@@ -30,6 +30,10 @@
                 <input name="status" type="status" class="form-control" id="exampleFormControlInput1" placeholder="0 para inativo ou 1 ativo" required>
             </div>
             </div>
+            <div class="mb-3 col-12">
+                <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+                <input name="categoria" type="categoria" class="form-control" id="exampleFormControlInput1" placeholder="proteina/mistura/acompanhamento/principal" required>
+            </div>
                 <a href=<?=site_url("Produtos/todososprodutos")?> type="voltar" class="btn btn-secondary">Voltar</a>
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
                 <button type="reset" class="btn btn-primary">Limpar</button>
