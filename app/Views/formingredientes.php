@@ -18,7 +18,7 @@
                 ?>
                     <div class="row">
                         <div class="col">
-                            <input name="itens_selecionados[]"value="<?=$ingrediente->nome?>" class="form-check-input" type="checkbox" id="flexCheckDefault">
+                            <input name="itens_selecionados[]"value="<?=$ingrediente->idproduto?>" class="form-check-input" type="checkbox" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault"> 
                                 <?=$ingrediente->nome?>  
                             </label>            
@@ -39,7 +39,7 @@
                             
                      <div class="row">
                         <div class="col">
-                            <input name="itens_selecionados[]" value="<?=$ingrediente->nome?>" class="form-check-input" type="checkbox" id="flexCheckDefault">
+                            <input name="itens_selecionados[]" value="<?=$ingrediente->idproduto?>" class="form-check-input" type="checkbox" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault"> 
                                 <?=$ingrediente->nome?>  
                             </label>            
@@ -57,7 +57,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <input name="itens_selecionados[]" value="<?=$ingrediente->nome?>" class="form-check-input" type="checkbox" id="flexCheckDefault">
+                            <input name="itens_selecionados[]" value="<?= $ingrediente->idproduto?>" class="form-check-input" type="checkbox" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault"> 
                                 <?=$ingrediente->nome?>  
                             </label>            

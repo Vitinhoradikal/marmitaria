@@ -18,7 +18,7 @@ class App extends BaseConfig
      *    http://example.com/
      */
     #public string $baseURL = 'http://localhost/';
-    public string $baseURL = 'http://10.0.0.12/marmitas/public/';
+    public string $baseURL = 'http://10.0.0.120/marmitas/public/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

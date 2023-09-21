@@ -43,7 +43,7 @@ class Clientes extends BaseController
                     ", $params);
         $db->close();
 
-        echo "cadastrado";
+        return $this->todososclientes();
     }
 
     private function clientes()
@@ -57,8 +57,8 @@ class Clientes extends BaseController
 
     public function todososclientes()
     {
-        $produtos['clientes'] = $this->clientes();
-        return view('layouts/listadeclientes',$produtos);
+        $clientes['clientes'] = $this->clientes();
+        return view('layouts/listadeclientes',$clientes);
 
     }
 

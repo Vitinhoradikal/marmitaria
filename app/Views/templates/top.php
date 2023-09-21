@@ -18,7 +18,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Pedidos</a>
+        <a class="nav-link active" aria-current="page" href="<?= site_url('Home/index')?>">Pedidos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?= site_url('Clientes/todososclientes') ?>">Clientes</a>
