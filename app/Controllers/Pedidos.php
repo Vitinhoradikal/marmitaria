@@ -65,6 +65,7 @@ class Pedidos extends BaseController
         echo view('templates/top');
         //echo("Marmita-> ".$_SESSION['marmita']);
         echo view ('formingredientes',$ingredientes);
+        echo view('templates/foot.php');
     }
 
     public function inseremarmita()
@@ -135,21 +136,53 @@ $idmarmita=$db->insertID();
             $db->close;
         }
         echo view('templates/top');
-        echo("Pedido Cadastrado com sucesso");
+        echo("<div class='row'>
+                    <div class='col-2'>
+                        <div class='alert alert-success'>Pedido Cadastrado com sucesso'</div>
+                    </div>
+                </div>");
+                
     }
 
-    public function apresentapedido($idpedido)
+    public function preparaPedido($idpedido)
     {
-        $params = 
-                [
-                    'idpedido' => $idpedido
-                ];
         $db=db_connect();
-        $pedido = $db->query("SELECT * FROM pedidos
-                            WHERE idpedido = :idpedido:",
-                            $params)->getResultObject();
+            $dados=$db->query("SELECT
+            pedidos.idpedido,
+            pedidos.datapedido,
+            pedidos.valorpedido,
+            pedidos.status,
+            marmitasdopedido.idmarmitaspedido,
+            marmitasdopedido.idembalagem,
+            produtosdamarmita.idItemMarmita,
+            produtosdamarmita.idproduto,
+            clientes.idcliente,
+            clientes.nome,
+            clientes.rua,
+            clientes.numero,
+            clientes.bairro,
+            clientes.referencia,
+            produtos.idproduto,
+            produtos.nomeProd
+        FROM pedidos
+        INNER JOIN marmitasdopedido ON pedidos.idpedido = marmitasdopedido.idpedido
+        INNER JOIN produtosdamarmita ON marmitasdopedido.idmarmitaspedido = produtosdamarmita.idembalagem
+        INNER JOIN clientes ON pedidos.idcliente = clientes.idcliente
+        INNER JOIN produtos ON produtos.idproduto = produtosdamarmita.idproduto
+        WHERE pedidos.idpedido = $idpedido;")->getResultObject();
         $db->close();
-        #print_r($pedido);
-        return $pedido;
+
+        print_r($dados);
+        return $dados;
+    }
+
+    public function mostrarpedido($idpedido)
+    {
+        $dados = $this->preparaPedido($idpedido);
+       echo view('templates/top.php');
+        echo view('mostrapedido.php', ['dados'=>$dados]);
+        echo view('templates/foot.php');
+
+        #print_r($dados);
     }
 }

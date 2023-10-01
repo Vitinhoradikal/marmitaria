@@ -8,7 +8,7 @@
             <h4 class="display-6">Novos Pedidos</h4><hr>
             <?php foreach($pedidos as $pedido){
                    if($pedido->status == 'analise'){
-                    echo("<h5>Pedido $pedido->idpedido</h5>");
+                    echo("<h5><a class='alert-link' href='".site_url('Pedidos/mostrarpedido/'.$pedido->idpedido)."'>Pedido $pedido->idpedido</a></h5>");
 
                     $db=db_connect();
                     $clientes=$db->query("SELECT * FROM clientes WHERE idcliente=$pedido->idcliente")->getResultObject();
@@ -28,7 +28,7 @@
             <h4 class="display-6">Em Produção</h4><hr>
             <?php foreach($pedidos as $pedido){
                    if($pedido->status == 'producao'){
-                    echo("<h5><a href='".site_url('Pedidos/apresentapedido/'.$pedido->idpedido)."'>Pedido $pedido->idpedido</a></h5>");
+                    echo("<h5><a class='alert-link' href='".site_url('Pedidos/mostrarpedido/'.$pedido->idpedido)."'>Pedido $pedido->idpedido</a></h5>");
                     
                     $db=db_connect();
                     $clientes=$db->query("SELECT * FROM clientes WHERE idcliente=$pedido->idcliente")->getResultObject();
@@ -47,7 +47,7 @@
             <h4 class="display-6">Prontos</h4><hr>
             <?php foreach($pedidos as $pedido){
                    if($pedido->status == 'entrega'){
-                    echo("<h5>Pedido $pedido->idpedido</h5>");
+                    echo("<h5><a class='alert-link' href='".site_url('Pedidos/mostrarpedido/'.$pedido->idpedido)."'>Pedido $pedido->idpedido</a></h5>");
                     
                     $db=db_connect();
                     $clientes=$db->query("SELECT * FROM clientes WHERE idcliente=$pedido->idcliente")->getResultObject();
